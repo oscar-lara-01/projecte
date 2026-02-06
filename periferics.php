@@ -45,6 +45,21 @@
             font-size: 12px;
             color: #666;
         }
+        .boton-periferics {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF; /* Color azul del botón */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+}
+
+        .boton-periferics:hover {
+            background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+            transform: scale(1.05); /* Efecto ligero de "agrandar" al pasar el mouse */
+}
     </style>
 </head>
 <body>
@@ -55,32 +70,32 @@
 
     <div class="portatil">
         <div class="imagen">Imagen</div>
-        <p>Periferic 1</p>
+        <p><a href="periferics1.php" class="boton-periferics">Periferics</a></p>
     </div>
 
     <div class="portatil">
         <div class="imagen">Imagen</div>
-        <p>Periferic 2</p>
+        <p><a href="periferics2.php" class="boton-periferics">Periferics</a></p>
     </div>
 
     <div class="portatil">
         <div class="imagen">Imagen</div>
-        <p>Periferic 3</p>
+        <p><a href="periferics3.php" class="boton-periferics">Periferics</a></p>
     </div>
 
     <div class="portatil">
         <div class="imagen">Imagen</div>
-        <p>Periferic 4</p>
+        <p><a href="periferics4.php" class="boton-periferics">Periferics</a></p>
     </div>
 
     <div class="portatil">
         <div class="imagen">Imagen</div>
-        <p>Periferic 5</p>
+        <p><a href="periferics5.php" class="boton-periferics">Periferics</a></p>
     </div>
 
     <div class="portatil">
         <div class="imagen">Imagen</div>
-        <p>Periferic 6</p>
+        <p><a href="periferics6.php" class="boton-periferics">Periferics</a></p>
     </div>
 
 </div>

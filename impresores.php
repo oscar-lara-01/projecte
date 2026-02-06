@@ -55,6 +55,69 @@
             height: 100%;     /* Obliga a la imagen a ocupar el alto del div */
             object-fit: contain; /* Mantiene la proporción sin deformar la imagen */
         }
+        .boton-impresora {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF; /* Color azul del botón */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+}
+
+        .boton-impresora:hover {
+            background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+            transform: scale(1.05); /* Efecto ligero de "agrandar" al pasar el mouse */
+}
+
+
+.boton-volver {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 90px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.boton-volver .cuerpo {
+    width: 90px;
+    height: 30px;
+    background-color: #444;
+    border-radius: 6px 6px 3px 3px;
+}
+
+.boton-volver .papel {
+    width: 70px;
+    height: 30px;
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    font-family: monospace;
+    border: 1px solid #ccc;
+    margin-top: -5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-volver .salida {
+    width: 90px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 0 0 6px 6px;
+}
+
+.boton-volver:hover .cuerpo {
+    background-color: #222;
+}
+
 
     </style>
 </head>
@@ -66,36 +129,40 @@
 
     <div class="portatil">
         <div class="imagen"><img src= /imgp/PIXMA.svg></div>
-        <p>Canon PIXMA ts3750i</p>
+        <p><a href="impresora1.php" class="boton-impresora">Canon PIXMA ts3750i</a></p>
     </div>
-    
 
     <div class="portatil">
         <div class="imagen"><img src= /imgp/brother.svg></div>
-        <p>Brother mfc-l3760cdw</p>
+        <p><a href="impresora2.php" class="boton-impresora">Brother mfc-l3760cdw</a></p>
     </div>
 
     <div class="portatil">
         <div class="imagen"><img src= /imgp/hp.svg></div>
-        <p>HP deskjet 2630</p>
+        <p><a href="impresora3.php" class="boton-impresora">HP deskjet 2630</a></p>
     </div>
 
     <div class="portatil">
         <div class="imagen"><img src= /imgp/epson.svg></div>
-        <p>EPSON l8100</p>
+        <p><a href="impresora4.php" class="boton-impresora">EPSON l8100</a></p>
     </div>
 
     <div class="portatil">
         <div class="imagen"><img src= /imgp/hp2.svg></div>
-        <p>HP laserjet m209d</p>
+        <p><a href="impresora5.php" class="boton-impresora">HP laserjet m209d</a></p>
     </div>
 
     <div class="portatil">
         <div class="imagen">Imagen</div>
-        <p>Impresora 6</p>
+        <p><a href="/impresoras-pag/impresora6.php" class="boton-impresora">Impresora 6</a></p>
     </div>
 
 </div>
+<a href="principal.php" class="boton-volver">
+    <span class="cuerpo"></span>
+    <span class="papel">Volver</span>
+    <span class="salida"></span>
+</a>
 
 </body>
 </html>
